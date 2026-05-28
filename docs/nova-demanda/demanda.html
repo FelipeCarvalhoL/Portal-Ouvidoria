@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Demanda</title>
+
+    <link rel="stylesheet" href="demanda.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>
+            Portal de Ouvidoria
+        </h1>
+
+        <div class="perfil">
+            👤
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="titulo-topo">
+            Informe os dados da sua demanda
+        </div>
+
+        <form id="form-demanda">
+
+            <h2>
+                Classifique <span>*</span>
+            </h2>
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio" name="tipo" value="Reclamação" required>
+                    Reclamação
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo" value="Sugestão">
+                    Sugestão
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo" value="Elogio">
+                    Elogio
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo" value="Dúvida">
+                    Dúvida
+                </label>
+
+            </div>
+
+            <label class="titulo-label">
+                Título <span>*</span>
+            </label>
+
+            <input 
+                type="text"
+                id="titulo"
+                placeholder="Dê um título para sua demanda..."
+                required
+            >
+
+            <label class="titulo-label">
+                Descrição <span>*</span>
+            </label>
+
+            <textarea 
+                id="descricao"
+                placeholder="Descreva os detalhes da sua demanda..."
+                required
+            ></textarea>
+
+            <h2 class="contato">
+                Dados de contato
+            </h2>
+
+            <div class="dados">
+
+                <label>
+                    Nome: <span>*</span>
+                </label>
+
+                <input type="text" id="nome" required>
+
+                <label>
+                    E-mail: <span>*</span>
+                </label>
+
+                <input type="email" id="email" required>
+
+                <label>
+                    Telefone: <span>*</span>
+                </label>
+
+                <input 
+                    type="text"
+                    id="telefone"
+                    placeholder="(00) 00000-0000"
+                    maxlength="15"
+                    inputmode="numeric"
+
+                    oninput="
+                    this.value = this.value
+                    .replace(/\D/g, '')
+                    .replace(/^(\d{2})(\d)/g, '($1) $2')
+                    .replace(/(\d{5})(\d)/, '$1-$2')
+                    "
+
+                    required
+                >
+
+            </div>
+
+            <div class="btn-area">
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="demanda.js"></script>
+
+</body>
+</html>

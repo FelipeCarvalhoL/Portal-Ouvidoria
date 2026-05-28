@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resumo</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info{
+    margin-bottom: 20px;
+}
+
+.label{
+    font-weight: bold;
+    color: #333;
+}
+
+.valor{
+    margin-top: 5px;
+    color: #555;
+}
+
+#status{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#btnResposta{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Resumo da Solicitação</h1>
+
+    <div class="info">
+        <div class="label">Título</div>
+        <div class="valor" id="titulo"></div>
+    </div>
+
+    <div class="info">
+        <div class="label">Tipo</div>
+        <div class="valor" id="tipo"></div>
+    </div>
+
+    <div class="info">
+        <div class="label">Descrição</div>
+        <div class="valor" id="descricao"></div>
+    </div>
+
+    <div class="info">
+        <div class="label">Nome</div>
+        <div class="valor" id="nome"></div>
+    </div>
+
+    <div class="info">
+        <div class="label">Email</div>
+        <div class="valor" id="email"></div>
+    </div>
+
+    <div class="info">
+        <div class="label">Telefone</div>
+        <div class="valor" id="telefone"></div>
+    </div>
+
+    <div class="info">
+        <div class="label">Protocolo</div>
+        <div class="valor" id="protocolo"></div>
+    </div>
+
+    <div class="info">
+        <div class="label">Status</div>
+        <div class="valor" id="status"></div>
+    </div>
+
+    <button id="btnResposta">
+        Ver resposta
+    </button>
+
+</div>
+
+<script src="resumo.js"></script>
+
+</body>
+</html>

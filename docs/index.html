@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Ouvidoria</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo-box">
+            <img src="mapa.png" alt="Mapa Brasil">
+        </div>
+
+        <h1>Portal de Ouvidoria</h1>
+
+        <form id="form-login">
+
+            <label for="cpf">CPF:</label>
+
+            <input 
+                type="text"
+                id="cpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                inputmode="numeric"
+
+                oninput="
+                this.value = this.value
+                .replace(/\D/g, '')
+                .replace(/(\d{3})(\d)/, '$1.$2')
+                .replace(/(\d{3})(\d)/, '$1.$2')
+                .replace(/(\d{3})(\d{1,2})$/, '$1-$2')
+                "
+            >
+
+            <label for="senha">Senha:</label>
+
+            <div class="senha-box">
+
+                <input 
+                    type="password" 
+                    id="senha" 
+                    placeholder="******"
+                >
+
+                <button type="button" class="eye-btn" id="mostrarSenha">
+                    👁
+                </button>
+
+            </div>
+
+            <button type="button" class="forgot">
+                Esqueci Minha Senha
+            </button>
+
+            <button 
+                type="submit" 
+                class="entrar-btn"
+            >
+                Entrar
+            </button>
+
+        </form>
+
+        <p class="cadastro">
+            Não tem uma conta?
+
+            <button 
+                type="button"
+                class="cadastro-btn"
+                onclick="window.location.href='cadastro/cadastro.html'"
+            >
+                Cadastre-se
+            </button>
+        </p>
+
+        <button type="button" class="admin">
+            Entrar como Admin
+        </button>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

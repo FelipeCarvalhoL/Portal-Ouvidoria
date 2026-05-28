@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 260px;
+    background: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.logo-box{
+    width: 115px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box img{
+    width: 90px;
+}
+
+h1{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+form{
+    text-align: left;
+}
+
+label{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    height: 28px;
+    border: none;
+    background: #d9d9d9;
+    border-radius: 4px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.2s;
+    cursor: text;
+}
+
+input:hover{
+    background: #cfcfcf;
+}
+
+input:focus{
+    background: #eeeeee;
+    border: 2px solid #ff7a1a;
+    transform: scale(1.02);
+}
+
+.senha-box{
+    position: relative;
+}
+
+.eye-btn{
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.eye-btn:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.forgot{
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #ff6a00;
+    text-align: right;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.forgot:hover{
+    color: #ff8c3a;
+    transform: scale(1.05);
+}
+
+.entrar-btn{
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-radius: 20px;
+    background: #ff7f27;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.entrar-btn:hover{
+    background: #ff6600;
+    transform: scale(1.03);
+}
+
+.cadastro{
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.cadastro-btn{
+    border: none;
+    background: transparent;
+    color: #ff6a00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cadastro-btn:hover{
+    color: #ff8c3a;
+    transform: scale(1.05);
+}
+
+.admin{
+    margin-top: 8px;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.admin:hover{
+    color: #ff6a00;
+    transform: scale(1.05);
+}
