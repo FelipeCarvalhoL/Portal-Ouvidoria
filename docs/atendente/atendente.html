@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portal de Ouvidoria</title>
+
+  <!-- ICONS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="atendente.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+      <h1>Portal de Ouvidoria</h1>
+
+      <!-- ÍCONE USER -->
+      <div class="user-icon">
+        <i class="fa-solid fa-user"></i>
+      </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+
+        <h2>Filtros</h2>
+
+        <div class="line"></div>
+
+        <!-- Categorias -->
+        <div class="filter-group">
+
+          <h3>Categorias</h3>
+
+          <div class="filter-box">
+
+            <div class="filter-item">Reclamação</div>
+            <div class="filter-item">Elogio</div>
+            <div class="filter-item">Dúvida</div>
+            <div class="filter-item">Sugestão</div>
+            <div class="filter-item">Todas</div>
+
+          </div>
+
+        </div>
+
+        <!-- Status -->
+        <div class="filter-group">
+
+          <h3>Status</h3>
+
+          <div class="filter-box">
+
+            <div class="filter-item">Pendente</div>
+            <div class="filter-item">Em análise</div>
+            <div class="filter-item">Aprovado</div>
+            <div class="filter-item">Respondido</div>
+            <div class="filter-item">Concluído</div>
+            <div class="filter-item">Cancelado</div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+      <!-- CONTENT -->
+      <section class="content">
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Pesquisar manifestação..."
+          >
+
+        </div>
+
+        <div class="results">
+          <span id="resultCount">4</span> resultados
+        </div>
+
+        <!-- CARDS -->
+        <!-- CARD -->
+<div class="card">
+
+  <div class="card-title">
+    Reclamação: Poste Caído
+  </div>
+
+  <div class="card-info">
+
+    <span>10/05/2028</span>
+
+    <span class="status finalizado">
+      Status: Finalizado
+    </span>
+
+  </div>
+
+</div>
+
+<!-- CARD -->
+<div class="card">
+
+  <div class="card-title">
+    Sugestão: Nova iluminação
+  </div>
+
+  <div class="card-info">
+
+    <span>15/06/2028</span>
+
+    <span class="status pendente">
+      Status: Pendente
+    </span>
+
+  </div>
+
+</div>
+
+<!-- CARD -->
+<div class="card">
+
+  <div class="card-title">
+    Elogio: Atendimento rápido
+  </div>
+
+  <div class="card-info">
+
+    <span>18/06/2028</span>
+
+    <span class="status finalizado">
+      Status: Concluído
+    </span>
+
+  </div>
+
+</div>
+
+<!-- CARD -->
+<div class="card">
+
+  <div class="card-title">
+    Dúvida: Taxa de iluminação
+  </div>
+
+  <div class="card-info">
+
+    <span>20/06/2028</span>
+
+    <span class="status cancelado">
+      Status: Cancelado
+    </span>
+
+  </div>
+
+</div>
+
+<!-- NOVOS CARDS -->
+
+<div class="card">
+
+  <div class="card-title">
+    Reclamação: Buraco na Rua
+  </div>
+
+  <div class="card-info">
+
+    <span>21/06/2028</span>
+
+    <span class="status pendente">
+      Status: Em análise
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Sugestão: Nova faixa de pedestres
+  </div>
+
+  <div class="card-info">
+
+    <span>22/06/2028</span>
+
+    <span class="status finalizado">
+      Status: Aprovado
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Reclamação: Falta de água
+  </div>
+
+  <div class="card-info">
+
+    <span>23/06/2028</span>
+
+    <span class="status pendente">
+      Status: Pendente
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Elogio: Atendimento da prefeitura
+  </div>
+
+  <div class="card-info">
+
+    <span>24/06/2028</span>
+
+    <span class="status finalizado">
+      Status: Respondido
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Dúvida: IPTU atrasado
+  </div>
+
+  <div class="card-info">
+
+    <span>25/06/2028</span>
+
+    <span class="status pendente">
+      Status: Em análise
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Reclamação: Sem iluminação pública
+  </div>
+
+  <div class="card-info">
+
+    <span>26/06/2028</span>
+
+    <span class="status cancelado">
+      Status: Cancelado
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Sugestão: Plantio de árvores
+  </div>
+
+  <div class="card-info">
+
+    <span>27/06/2028</span>
+
+    <span class="status finalizado">
+      Status: Concluído
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Reclamação: Lixo acumulado
+  </div>
+
+  <div class="card-info">
+
+    <span>28/06/2028</span>
+
+    <span class="status pendente">
+      Status: Pendente
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Elogio: Limpeza urbana eficiente
+  </div>
+
+  <div class="card-info">
+
+    <span>29/06/2028</span>
+
+    <span class="status finalizado">
+      Status: Finalizado
+    </span>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <div class="card-title">
+    Dúvida: Cadastro habitacional
+  </div>
+
+  <div class="card-info">
+
+    <span>30/06/2028</span>
+
+    <span class="status pendente">
+      Status: Em análise
+    </span>
+
+  </div>
+
+</div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
